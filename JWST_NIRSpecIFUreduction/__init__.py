@@ -5,5 +5,5 @@ __author__ = 'Sarah Betti'
 from . import preprocessing
 from . import centering
 from . import make_disk_mask
-from . import PSF_subtraction
+from . import psf_subtraction
 from . import diskmodeling_diffevo
