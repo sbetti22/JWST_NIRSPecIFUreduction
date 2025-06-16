@@ -255,7 +255,7 @@ def make_diskmodel(dir_name, savepath, sci_cube, ref_cube, cube_sci_filename, RD
   
         result = differential_evolution(disk_model_subtract,bounds=bounds,popsize=10, 
                             recombination=0.7, mutation=(0.5, 1.0), 
-                            seed=5, polish=False) #, updating='deferred',workers=-1
+                            seed=5, polish=False, updating='deferred',workers=-1) 
         solution = result['x']
         
         print('Status : %s' % result['message'])

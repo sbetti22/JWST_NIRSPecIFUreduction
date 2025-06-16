@@ -47,7 +47,7 @@ def jet_region(reg_file):
 
 
 def run_make_mask(dir_name, sci_file_name, plot=False):
-    mask_path = Path(dir_name, 'mask')
+    mask_path = Path(dir_name, 'masks')
     sci_cube = fits.getdata(Path(dir_name, f'centering/{sci_file_name}'))
     nz, ny, nx = sci_cube.shape
 
