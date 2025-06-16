@@ -1,4 +1,6 @@
-from ._version import __version__, __version_tuple__
+__version__ = "1.0"
+__author__ = 'Sarah Betti'
+
 
 from . import preprocessing
 from . import centering
