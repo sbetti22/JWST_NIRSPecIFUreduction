@@ -1,8 +1,7 @@
-__version__ = "1.0"
-__author__ = 'Sarah Betti'
+from ._version import __version__, __version_tuple__
 
-from JWST_NIRSpecIFUreduction.preprocessing import *
-from JWST_NIRSpecIFUreduction.centering import *
-from JWST_NIRSpecIFUreduction.make_disk_mask import *
-from JWST_NIRSpecIFUreduction.PSF_subtraction import *
-from JWST_NIRSpecIFUreduction.diskmodeling_diffevo import *
+from . import preprocessing
+from . import centering
+from . import make_disk_mask
+from . import PSF_subtraction
+from . import diskmodeling_diffevo
